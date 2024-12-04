@@ -117,7 +117,7 @@
                     <td><input type="radio" name="social6" value="no"></td>
                 </tr>
                 <tr>
-                    <td>‘나는 못해’, ‘모르겠어요’, ‘엄마가 해’라는 말을 한다.</td>
+                    <td>‘나는 못 해’, ‘모르겠어요’, ‘엄마가 해’라는 말을 한다.</td>
                     <td><input type="radio" name="social7" value="yes" required></td>
                     <td><input type="radio" name="social7" value="no"></td>
                 </tr>
@@ -386,7 +386,7 @@
                     <td><input type="radio" name="receptive22" value="no"></td>
                 </tr>
                 <tr>
-                    <td>다음 대명사 중 1대 이상 사용한다. 예: ‘나는’, ‘나를’, ‘너는’, ‘너를’, ‘그것은’, ‘그것을’ 등.</td>
+                    <td>다음 대명사 중 1개 이상 사용한다. 예: ‘나는’, ‘나를’, ‘너는’, ‘너를’, ‘그것은’, ‘그것을’ 등.</td>
                     <td><input type="radio" name="receptive23" value="yes" required></td>
                     <td><input type="radio" name="receptive23" value="no"></td>
                 </tr>
@@ -461,7 +461,7 @@
                     <td><input type="radio" name="receptive37" value="no"></td>
                 </tr>
                 <tr>
-                    <td>복수의 개념을 알고 사용한다. 예: 차들.</td>
+                    <td>복수의 개념을 알고 사용한다. 예: 차 들.</td>
                     <td><input type="radio" name="receptive38" value="yes" required></td>
                     <td><input type="radio" name="receptive38" value="no"></td>
                 </tr>
@@ -591,7 +591,7 @@
                     <td><input type="radio" name="expressive12" value="no"></td>
                 </tr>
                 <tr>
-                    <td>사물의 용도가 무엇인지 묻는 질문에 대답한다. 예: ‘과자(또는, 모자, 컵 등)는 무엇하는 것이지요?’</td>
+                    <td>사물의 용도가 무엇인지 묻는 질문에 대답한다. 예: ‘모자(또는, 컵 등)는 무엇하는 것이지요?’</td>
                     <td><input type="radio" name="expressive13" value="yes" required></td>
                     <td><input type="radio" name="expressive13" value="no"></td>
                 </tr>
@@ -995,7 +995,7 @@ function calculateResults() {
     let expressiveStage = getStage(expressiveYes, expressiveQuestions, "expressive");
 
     document.getElementById("resultOutput").innerHTML = `
-        <p><strong>사회성 언어:</strong> ${socialStage}</p>
+        <p><strong>사회성:</strong> ${socialStage}</p>
         <p><strong>수용 언어:</strong> ${receptiveStage}</p>
         <p><strong>표현 언어:</strong> ${expressiveStage}</p>
     `;
